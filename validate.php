@@ -4,7 +4,6 @@
 	
 	/* <-- Start the comment, end it with --> */
 	
-
 	// About form handling with PHP
 	// http://www.w3schools.com/php/php_forms.asp
 	// PRACTISE! 	Make it work
@@ -46,7 +45,7 @@
 		// "Give me all data from 'users' table, where the username field is like $username"
 		
 		//Answer to the QUERY HERE
-		$query = "QUERY HERE = ".$username.";" or die("Error in query, ".mysqli_error($connection));
+		$query = mysql_real_escape_string("QUERY HERE = ".$username.";") or die("Error in query, ".mysqli_error($connection));
 		
 		//Executing phase shift.... Not. Executing query.
 		$result = $connection->query($query);
