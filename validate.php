@@ -45,6 +45,7 @@
 		// "Give me all data from 'users' table, where the username field is like $username"
 		
 		//Answer to the QUERY HERE
+		//Btw, check what "mysql_real_escape_string()" does ( "Google PHP mysql_real_escape_string")
 		$query = mysql_real_escape_string("QUERY HERE = ".$username.";") or die("Error in query, ".mysqli_error($connection));
 		
 		//Executing phase shift.... Not. Executing query.
