@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>My first login screen</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			
+			label
+			{
+				color: green;
+				font-weight: bold;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div id="loginForm">
+			<img src="./login.png" alt="Login Image" />
+			<form method="GET" action="./validate.php">
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username" />	
+				
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" />
+				<br/>
+				<input type="submit" value="Log in!" />
+				
+			</form>
+		</div>
+		<a target="_blank" href="http://www.w3schools.com/css/default.asp" >Link to CSS style guide</a>
+	</body>
+</html>
